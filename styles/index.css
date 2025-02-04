@@ -21,6 +21,7 @@ button {
     font-size: 2rem;
     display: flex;
     padding: 0.875rem;
+    cursor: pointer;
 }
 
 .btn-container {
