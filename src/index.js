@@ -1,6 +1,14 @@
 const express = require('express')
 const app = express()
+const bodyparser = require('body-parser')
+require("dotenv").config()
 const port = 3000
+
+// Body-parser middleware
+ // Extende accept nested data in json
+app.use(bodyparser.urlencoded({ extended: true }))
+ // transform the data into json
+app.use(bodyparser.json())
 
 app.set('view engine', 'ejs');
 
